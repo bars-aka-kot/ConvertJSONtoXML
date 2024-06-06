@@ -57,7 +57,7 @@ namespace ConvertJSONtoXML
             foreach (var element in root.EnumerateArray())
             {
                 XElement objectElement = new XElement("text");
-                parseElement(root, objectElement);
+                parseElement(element, objectElement);
                 rootElement.Add(objectElement);
             }
         }
